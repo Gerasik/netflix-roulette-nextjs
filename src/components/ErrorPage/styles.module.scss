@@ -1,0 +1,8 @@
+.error {
+  color: $fontColor;
+  text-align: center;
+  .code {
+    color: $secondaryFontColor;
+    margin-right: 0.5em;
+  }
+}

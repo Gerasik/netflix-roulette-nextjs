@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
 // import createStore from '../test/store/configure-store';
-import createStore from '../store/store';
+import createStore from '../src/store/store';
 
 import './index.scss';
 

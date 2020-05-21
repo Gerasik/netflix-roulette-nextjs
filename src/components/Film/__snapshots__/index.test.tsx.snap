@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Film /> expected image placeholder and 0 runtime  1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Film
+    filmData={
+      Immutable.Map {
+        "budget": 54545,
+        "release_date": "2020-05-01",
+        "vote_average": 55,
+        "tagline": "test",
+        "genres": Immutable.List [
+          "drama",
+        ],
+        "poster_path": "",
+        "title": "second movie",
+        "runtime": NaN,
+        "overview": "ove",
+        "vote_count": 66,
+        "id": 2,
+        "revenue": 5454,
+      }
+    }
+    setFilmId={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <picture
+        className="picture"
+        style={Object {}}
+      >
+        <source
+          media="(min-width: 600px)"
+          srcSet="image_placeholder.png"
+        />
+        <img
+          alt="second movie"
+          src="image_placeholder.png"
+          width="50%"
+        />
+      </picture>
+      <div
+        className="info"
+      >
+        <div
+          className="title-container"
+        >
+          <h1
+            className="title"
+          >
+            second movie
+          </h1>
+          <div
+            className="round"
+          >
+            <span
+              className="rating"
+            >
+              55
+            </span>
+          </div>
+        </div>
+        <span
+          className="smallDescription"
+        >
+          test
+        </span>
+        <div
+          className="parameters"
+        >
+          <span
+            className="year"
+          >
+            2020
+          </span>
+          <span
+            className="runtime"
+          >
+            0 min
+          </span>
+        </div>
+        <p
+          className="overview"
+        >
+          ove
+        </p>
+      </div>
+    </div>
+  </Film>
+</Router>
+`;
+
+exports[`<Film /> renders children when passed in 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Film
+    filmData={
+      Immutable.Map {
+        "budget": 54545,
+        "release_date": "2020-05-01",
+        "vote_average": 55,
+        "tagline": "test",
+        "genres": Immutable.List [
+          "drama",
+          "sitcom",
+          "drama",
+        ],
+        "poster_path": "/movie_url/image.jpg",
+        "title": "first movie",
+        "runtime": 5454,
+        "overview": "ove",
+        "vote_count": 66,
+        "id": 1,
+        "revenue": 5454,
+      }
+    }
+    setFilmId={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <picture
+        className="picture"
+        style={
+          Object {
+            "backgroundColor": "inherit",
+          }
+        }
+      >
+        <source
+          media="(min-width: 600px)"
+          srcSet="/movie_url/image.jpg"
+        />
+        <img
+          alt="first movie"
+          src="/movie_url/image.jpg"
+          width="100%"
+        />
+      </picture>
+      <div
+        className="info"
+      >
+        <div
+          className="title-container"
+        >
+          <h1
+            className="title"
+          >
+            first movie
+          </h1>
+          <div
+            className="round"
+          >
+            <span
+              className="rating"
+            >
+              55
+            </span>
+          </div>
+        </div>
+        <span
+          className="smallDescription"
+        >
+          test
+        </span>
+        <div
+          className="parameters"
+        >
+          <span
+            className="year"
+          >
+            2020
+          </span>
+          <span
+            className="runtime"
+          >
+            5454 min
+          </span>
+        </div>
+        <p
+          className="overview"
+        >
+          ove
+        </p>
+      </div>
+    </div>
+  </Film>
+</Router>
+`;

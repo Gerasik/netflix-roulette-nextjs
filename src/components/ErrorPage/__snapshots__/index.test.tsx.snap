@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorPage /> should to be match snapshot   1`] = `
+<h1
+  className="error"
+>
+  <span
+    className="code"
+  >
+    404
+  </span>
+  Page not found
+</h1>
+`;

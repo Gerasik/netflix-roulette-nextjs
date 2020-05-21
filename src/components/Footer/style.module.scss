@@ -1,0 +1,12 @@
+@import 'styles/colors.scss';
+
+.footer {
+  background-color: $tertiaryColor;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  color: $secondaryFontColor;
+  padding: 0.5% 0;
+  font-size: 1.3em;
+}
