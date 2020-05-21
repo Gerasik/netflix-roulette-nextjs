@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test initial SearchContainer should render with initial state data 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Search)>
+    <Search
+      changeSearchBy={[Function]}
+      changeSearchString={[Function]}
+      searchData={
+        Object {
+          "searchBy": "genres",
+          "searchString": "",
+          "sortBy": "vote_average",
+        }
+      }
+      setData={[Function]}
+    >
+      <p
+        className="label"
+      >
+        find your movie
+      </p>
+      <div
+        className="search-form"
+      >
+        <input
+          className="search-text"
+          onChange={[Function]}
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <button
+          className="search-button"
+          onClick={[Function]}
+          type="button"
+        >
+          search
+        </button>
+      </div>
+      <div
+        className="search-by"
+      >
+        <span>
+          search by
+        </span>
+        <button
+          className="by-title"
+          onClick={[Function]}
+          type="button"
+        >
+          title
+        </button>
+        <button
+          className="by-genre active"
+          onClick={[Function]}
+          type="button"
+        >
+          genre
+        </button>
+      </div>
+    </Search>
+  </Connect(Search)>
+</Provider>
+`;

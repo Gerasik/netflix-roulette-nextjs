@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorBoundary /> render error should render with test data 1`] = `
+<ErrorBoundary>
+  <h1>
+    Something went wrong.
+  </h1>
+</ErrorBoundary>
+`;
+
+exports[`<ErrorBoundary /> test data should render with test data 1`] = `
+<h1>
+  Hello world
+</h1>
+`;

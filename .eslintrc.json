@@ -1,0 +1,88 @@
+{
+  "extends": [
+    // "airbnb",
+    // "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:import/typescript",
+    // "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "env": {
+    "browser": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "off",
+    "@typescript-eslint/camelcase": [
+      "error",
+      {
+        "allow": ["poster_path", "release_date"]
+      }
+    ],
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "ts": "always",
+        "tsx": "always"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "no-shadow": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    },
+    "import/resolver": "webpack"
+    // "import/resolver": {
+    //   "node": {
+    //     "extensions": [".js", ".jsx", ".ts", ".tsx"]
+    //   },
+    //   "webpack": {
+    //     "resolve": {
+    //       "extensions": [".js", ".jsx", ".ts", ".tsx"]
+    //     },
+    //     "env": {
+    //       "NODE_ENV": "local",
+    //       "production": false
+    //     }
+    //   }
+    // }
+    // "import/resolver": {
+    //   "node": {
+    //     "extensions": [".js", ".jsx", ".ts", ".tsx"]
+    //   },
+    //   "webpack": {
+    //     // "config": "./config/webpack.config.js",
+    //     "env": {
+    //       "NODE_ENV": "local"
+    //     }
+    //   }
+    //   // "webpack": { "config": { "resolve": { "extensions": [".js", ".jsx", ".ts", ".tsx"] } } }
+    // }
+    // "import/resolver": "webpack"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser"
+}

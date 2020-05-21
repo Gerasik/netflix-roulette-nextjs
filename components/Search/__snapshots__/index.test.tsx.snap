@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly date component 1`] = `
+<Fragment>
+  <p
+    className="label"
+  >
+    find your movie
+  </p>
+  <div
+    className="search-form"
+  >
+    <input
+      className="search-text"
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+    <button
+      className="search-button"
+      onClick={[Function]}
+      type="button"
+    >
+      search
+    </button>
+  </div>
+  <div
+    className="search-by"
+  >
+    <span>
+      search by
+    </span>
+    <button
+      className="by-title"
+      onClick={[Function]}
+      type="button"
+    >
+      title
+    </button>
+    <button
+      className="by-genre active"
+      onClick={[Function]}
+      type="button"
+    >
+      genre
+    </button>
+  </div>
+</Fragment>
+`;

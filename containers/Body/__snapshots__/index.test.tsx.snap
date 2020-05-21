@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test initial BodyContainer should render with initial state data 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Body)>
+    <Body
+      changeSortBy={[Function]}
+      moviesData={
+        Object {
+          "data": Immutable.List [],
+          "sortBy": "vote_average",
+          "total": 0,
+        }
+      }
+      setStartData={[Function]}
+    >
+      <div
+        className="movie-container"
+      >
+        <header
+          className="movie-header"
+        >
+          <span
+            className="movie-count"
+          />
+          <div
+            className="movie-buttons"
+          >
+            <span>
+              sort by
+            </span>
+            <button
+              className="sort-release"
+              onClick={[Function]}
+              type="button"
+            >
+              release date
+            </button>
+            <button
+              className="sort-rating active"
+              onClick={[Function]}
+              type="button"
+            >
+              rating
+            </button>
+          </div>
+        </header>
+        <div
+          className="movie-empty-result"
+        >
+          <span>
+            No films found
+          </span>
+        </div>
+      </div>
+    </Body>
+  </Connect(Body)>
+</Provider>
+`;
+
+exports[`Test initial BodyContainer should render with next state data 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Body)>
+    <Body
+      changeSortBy={[Function]}
+      moviesData={
+        Object {
+          "data": Immutable.List [],
+          "sortBy": "vote_average",
+          "total": 0,
+        }
+      }
+      setStartData={[Function]}
+    >
+      <div
+        className="movie-container"
+      >
+        <header
+          className="movie-header"
+        >
+          <span
+            className="movie-count"
+          />
+          <div
+            className="movie-buttons"
+          >
+            <span>
+              sort by
+            </span>
+            <button
+              className="sort-release"
+              onClick={[Function]}
+              type="button"
+            >
+              release date
+            </button>
+            <button
+              className="sort-rating active"
+              onClick={[Function]}
+              type="button"
+            >
+              rating
+            </button>
+          </div>
+        </header>
+        <div
+          className="movie-empty-result"
+        >
+          <span>
+            No films found
+          </span>
+        </div>
+      </div>
+    </Body>
+  </Connect(Body)>
+</Provider>
+`;

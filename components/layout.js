@@ -1,44 +1,42 @@
-import React, {Component} from 'react'
-import {node} from 'prop-types'
-import Router from 'next/router'
-import Link from 'next/link'
+import React, { Component } from 'react';
+import { node } from 'prop-types';
+import Router from 'next/router';
+import Link from 'next/link';
 
 Router.onRouteChangeComplete = () => {
   document.querySelectorAll('.spinner').forEach(el => {
-    el.classList.remove('spinner')
-  })
-}
+    el.classList.remove('spinner');
+  });
+};
 
 class App extends Component {
   static propTypes = {
     children: node,
-  }
+  };
 
   componentDidMount() {
-    if (typeof window === 'undefined') return
-    Router.prefetch('/sync')
-    Router.prefetch('/async')
+    if (typeof window === 'undefined') return;
+    Router.prefetch('/sync');
+    Router.prefetch('/async');
   }
 
   handleClick = e => {
-    e.preventDefault()
-    e.target.classList.add('spinner')
-    Router.push(e.target.href)
-  }
+    e.preventDefault();
+    e.target.classList.add('spinner');
+    // Router.push(e.target.href);
+  };
 
   render() {
     return (
       <main>
         <Link href="/" onClick={this.handleClick}>
-          <a>
-            Home
-          </a>
+          <a>Home</a>
         </Link>
         <Link href="/sync" onClick={this.handleClick}>
-        <a>Sync</a>
+          <a>Sync</a>
         </Link>
         <Link href="/async" onClick={this.handleClick}>
-        <a>Async</a>
+          <a>Async</a>
         </Link>
         {this.props.children}
         <style jsx>{`
@@ -79,8 +77,8 @@ class App extends Component {
         <style global jsx>{`
           html {
             color: #333;
-            font-family: -apple-system, system-ui, BlinkMacSystemFont,
-              'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+              'Helvetica Neue', Arial, sans-serif;
           }
 
           section {
@@ -111,8 +109,8 @@ class App extends Component {
           }
         `}</style>
       </main>
-    )
+    );
   }
 }
 
-export default App
+export default App;

@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Body /> should render with test data 1`] = `
+<div
+  className="movie-container"
+>
+  <header
+    className="movie-header"
+  >
+    <span
+      className="movie-count"
+    >
+      2 movie found
+    </span>
+    <div
+      className="movie-buttons"
+    >
+      <span>
+        sort by
+      </span>
+      <button
+        className="sort-release active"
+        onClick={[Function]}
+        type="button"
+      >
+        release date
+      </button>
+      <button
+        className="sort-rating"
+        onClick={[Function]}
+        type="button"
+      >
+        rating
+      </button>
+    </div>
+  </header>
+  <ul
+    className="movie-list"
+  >
+    <li
+      className="movie-item"
+      key="1"
+    >
+      <MovieCard
+        data={
+          Immutable.Map {
+            "budget": 54545,
+            "release_date": "2020-05-01",
+            "vote_average": 55,
+            "tagline": "test",
+            "genres": Immutable.List [
+              "drama",
+              "sitcom",
+              "drama",
+            ],
+            "poster_path": "/movie_url/image.jpg",
+            "title": "first movie",
+            "runtime": 5454,
+            "overview": "ove",
+            "vote_count": 66,
+            "id": 1,
+            "revenue": 5454,
+          }
+        }
+      />
+    </li>
+    <li
+      className="movie-item"
+      key="2"
+    >
+      <MovieCard
+        data={
+          Immutable.Map {
+            "budget": 54545,
+            "release_date": "2020-05-01",
+            "vote_average": 55,
+            "tagline": "test",
+            "genres": Immutable.List [
+              "drama",
+            ],
+            "poster_path": "/movie_url/image2.jpg",
+            "title": "second movie",
+            "runtime": 5454,
+            "overview": "ove",
+            "vote_count": 66,
+            "id": 2,
+            "revenue": 5454,
+          }
+        }
+      />
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders children when passed in 1`] = `
+<div
+  className="header-background"
+>
+  <img
+    alt="posters"
+    className="background-image"
+    src="header_background.jpg"
+  />
+  <Logo />
+  <div
+    className="container"
+  >
+    <div
+      className="unique"
+    />
+  </div>
+</div>
+`;
