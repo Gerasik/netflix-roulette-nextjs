@@ -1,12 +1,10 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import _ from 'lodash';
 
 import { useRouter } from 'next/router';
 import Logo from 'components/Logo';
 import styles from './style.module.scss';
-import headerIMG from '../../assets/header_background.jpg';
+import headerIMG from 'assets/header_background.jpg';
 
 const Header = ({ children }) => {
   const router = useRouter();

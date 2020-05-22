@@ -1,14 +1,12 @@
 import React, { useEffect, FunctionComponent, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { useRouter } from 'next/router';
 
 import imagePlaceholder from 'assets/image_placeholder.png';
 import { FilmProps } from './models';
 
 import styles from './style.module.scss';
-import { fromJS } from 'immutable';
 
-const Film = ({ filmData, setFilmId }) => {
+const Film: FunctionComponent<FilmProps> = ({ filmData, setFilmId }) => {
   const router = useRouter();
   const { id } = router.query;
 
