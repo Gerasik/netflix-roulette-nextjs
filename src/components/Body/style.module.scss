@@ -1,0 +1,71 @@
+@import 'styles/colors.scss';
+
+$borderRadiusSize: 0.3em;
+
+.movie- {
+  &list,
+  &header {
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+  }
+  &list {
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: $primaryColor;
+  }
+  &item {
+    width: 30%;
+  }
+  &container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &count {
+    font-weight: bold;
+  }
+  &buttons {
+    font-size: 0.9em;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    span {
+      margin: 0 1.3em;
+    }
+    .sort-release {
+      border-radius: $borderRadiusSize 0em 0em $borderRadiusSize;
+    }
+    .sort-rating {
+      border-radius: 0 $borderRadiusSize $borderRadiusSize 0;
+    }
+    .sort-release,
+    .sort-rating {
+      text-transform: uppercase;
+      font-size: 1em;
+      padding: 0.5em 2em;
+      border: none;
+      color: white;
+      background-color: rgba($color: $tertiaryColor, $alpha: 0.6);
+      cursor: pointer;
+      &:hover {
+        background-color: $secondaryFontColor;
+      }
+    }
+    .active {
+      background-color: $secondaryFontColor;
+    }
+  }
+  &empty-result {
+    font-weight: bold;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryColor;
+  }
+}

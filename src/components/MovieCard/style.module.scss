@@ -1,0 +1,57 @@
+@import '../../styles/colors';
+
+$opacityColor: rgba(
+  $color: $fontColor,
+  $alpha: 0.7,
+);
+
+$opacityColorSecond: rgba(
+  $color: $fontColor,
+  $alpha: 0.4,
+);
+
+.item {
+  color: $opacityColor;
+  .image,
+  .error {
+    margin-top: 2em;
+    min-height: 36em;
+    background-color: rgba($color: $fontColor, $alpha: 0.7);
+  }
+  .image {
+    width: 100%;
+  }
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .error-image {
+      width: 50%;
+    }
+  }
+  .title {
+    font-weight: bold;
+    color: $fontColor;
+  }
+  .date {
+    padding: 0.5em 1.1em;
+    border: 0.05em solid $opacityColorSecond;
+    border-radius: 0.8em;
+    margin: 0.1em;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8em;
+    align-items: center;
+    min-height: 2.5em;
+  }
+  .genre-list {
+    margin-top: 0.5em;
+  }
+  .genre {
+    display: inline-block;
+    color: $opacityColorSecond;
+    margin-right: 0.4em;
+  }
+}

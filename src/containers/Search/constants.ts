@@ -1,0 +1,7 @@
+const ActionType = {
+  CHANGE_SEARCH_STRING: 'CHANGE-SEARCH-STRING',
+  CHANGE_SEARCH_BY: 'CHANGE-SEARCH-BY',
+  CHANGE_SORT_BY: 'CHANGE-SORT-BY',
+};
+
+export default ActionType;

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src/",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "keyofStringsOnly": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "src",
+    "models",
+    "containers",
+    "components/Footer",
+    "components/Logo",
+    "components/Search",
+    "components/MovieCard",
+    "components/Body",
+    "components/Header",
+    "components/ErrorBoundary",
+    "store/store.ts",
+    "store/sagas.ts"
+  ],
+  "exclude": ["node_modules"]
+}
